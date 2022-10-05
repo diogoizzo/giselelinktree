@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+      <!-- Google Tag Manager -->
+      <script>
+         (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0],
+               j = d.createElement(s),
+               dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+         })(window, document, "script", "dataLayer", "GTM-NM4LT8P");
+      </script>
+      <!-- End Google Tag Manager -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+         rel="stylesheet"
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script type="module" src="./src/main.js" defer></script>
+      <title>Dra. Gisele Maia</title>
+   </head>
+   <body
+      class="relative min-h-screen bg-gradient-to-b from-bordoMedium to-bordoLight font-dmSans"
+   >
+      <!-- Google Tag Manager (noscript) -->
+      <noscript
+         ><iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NM4LT8P"
+            height="0"
+            width="0"
+            style="display: none; visibility: hidden"
+         ></iframe
+      ></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <main
+         class="relative mx-auto flex h-full max-w-2xl flex-col items-center space-y-6 px-6 py-12 text-bordoDark"
+      >
+         <div
+            class="absolute inset-x-8 top-1/2 z-20 flex h-fit -translate-y-1/2 scale-0 transform flex-col items-center justify-center space-y-6 rounded-2xl bg-bordoLightMedium px-6 py-10 opacity-0 shadow-lg transition-all delay-700 duration-300 lg:inset-x-32"
+            id="modalOk"
+         >
+            <img
+               src="./src/assets/check.svg"
+               class="h-20"
+               alt="ícone de sucesso do envio da mensagem"
+            />
+            <div class="text-center leading-tight">
+               <h1 class="mb-2 text-2xl font-semibold uppercase">
+                  Mensagem enviada com sucesso!
+               </h1>
+               <p>
+                  Agradecemos a sua mensagem, em breve retornaremos o seu
+                  contato.
+               </p>
+            </div>
+            <button
+               class="w-full rounded-2xl bg-bordoDark p-3 text-bordoLight shadow-md"
+               id="btnModalOkClose"
+            >
+               Fechar
+            </button>
+         </div>
+         <button
+            class="absolute top-3 right-3 z-30 inline-flex items-center justify-center rounded-full bg-bordoMediumDark p-3 shadow shadow-bordoMediumDark"
+            id="btnModal"
+         >
+            <img src="./src/assets/share.svg" alt="" class="w-6" />
+         </button>
+         <div
+            class="absolute top-3 left-1/2 z-20 mx-auto hidden w-[90%] origin-top-right -translate-x-1/2 scale-0 transform space-y-4 rounded-2xl bg-bordoLightMedium p-6 shadow-lg transition duration-200 ease-linear"
+            id="modal"
+         >
+            <a
+               href="https://www.facebook.com/sharer/sharer.php?u="
+               class="inline-flex w-full items-center justify-center space-x-3 rounded-2xl bg-bordoMedium py-4 shadow shadow-bordoMediumDark"
+            >
+               <img
+                  src="./src/assets/facebook.svg"
+                  alt="ícone do facebook"
+                  class="w-6"
+               />
+               <span> Compartinhar no Facebook </span>
+            </a>
+            <a
+               href="https://www.linkedin.com/sharing/share-offsite/?url="
+               class="inline-flex w-full items-center justify-center space-x-3 rounded-2xl bg-bordoMedium py-4 shadow shadow-bordoMediumDark"
+            >
+               <img
+                  src="./src/assets/instagram.svg"
+                  alt="ícone do instagram"
+                  class="w-7"
+               />
+               <span> Compartinhar no Linkedin </span>
+            </a>
+            <a
+               href="https://twitter.com/intent/tweet?text=Veja esse linktree! - "
+               class="inline-flex w-full items-center justify-center space-x-3 rounded-2xl bg-bordoMedium py-4 shadow shadow-bordoMediumDark"
+            >
+               <img src="./src/assets/twitter.svg" class="w-6" alt="" />
+               <span> Compartilhar no Twitter </span>
+            </a>
+            <a
+               href="https://wa.me/?text=Veja esse linktree! - "
+               class="inline-flex w-full items-center justify-center space-x-3 rounded-2xl bg-bordoMedium py-4 shadow shadow-bordoMediumDark"
+            >
+               <img src="./src/assets/whatsapp.svg" class="w-7" alt="" />
+               <span> Compartinhar pelo WhatsApp </span>
+            </a>
+            <a
+               href="https://www.messenger.com/new"
+               target="_blank"
+               class="inline-flex w-full items-center justify-center space-x-3 rounded-2xl bg-bordoMedium py-4 shadow shadow-bordoMediumDark"
+            >
+               <img src="./src/assets/messager.svg" class="w-6" alt="" />
+               <span> Compartinhar pelo Messager </span>
+            </a>
+            <a
+               href="mailto:?subject= Veja esse linktree! &body= Veja esse linktree! - "
+               class="inline-flex w-full items-center justify-center space-x-3 rounded-2xl bg-bordoMedium py-4 shadow shadow-bordoMediumDark"
+            >
+               <img src="./src/assets/email.svg" class="w-6" alt="" />
+               <span> Compartinhar por E-mail </span>
+            </a>
+         </div>
+         <img
+            src="./src/assets/ql4aHUSGSKunBqEl3YFv_oeysg460Y2o968fD.jpeg"
+            alt=""
+            class="h-36 rounded-full"
+            id="foto"
+         />
+         <div class="text-center">
+            <h1 class="pb-2 font-dmSans text-3xl font-semibold">
+               Dra. Gisele Maia
+            </h1>
+            <p>
+               Meu nome é Gisele Maia, sou biomédica e farmacêutica,
+               pós-graduada em estética.
+            </p>
+         </div>
+
+         <a
+            href="https://wa.me/5524992816710"
+            class="inline-flex w-full items-center justify-center space-x-3 rounded-2xl border border-bordoDark bg-bordoMedium py-4 shadow shadow-bordoMediumDark"
+            id="agendar"
+            ><img src="./src/assets/whatsapp.svg" class="w-7" alt="" />
+            <span> Agende sua consulta </span>
+         </a>
+         <a
+            id="face"
+            href="https://www.facebook.com/dragisele.estetica/"
+            class="inline-flex w-full items-center justify-center rounded-2xl bg-bordoMedium py-4 shadow shadow-bordoMediumDark"
+         >
+            Facebook
+         </a>
+         <a
+            href="https://www.instagram.com/dragisele.maia/"
+            class="inline-flex w-full items-center justify-center rounded-2xl bg-bordoMedium py-4 shadow shadow-bordoMediumDark"
+         >
+            Instagram
+         </a>
+         <a
+            href="https://goo.gl/maps/Dc6TGoNViXCzFJTX9"
+            class="inline-flex w-full items-center justify-center rounded-2xl bg-bordoMedium py-4 shadow shadow-bordoMediumDark"
+         >
+            Como chegar
+         </a>
+         <div
+            class="relative flex w-full cursor-pointer flex-col items-center justify-center rounded-2xl bg-bordoMedium py-4 shadow shadow-bordoMediumDark"
+         >
+            <div
+               class="inline-flex w-full items-center justify-center"
+               id="btnForm"
+            >
+               Deixe seu contato
+               <span
+                  class="absolute right-5 w-4 transition-transform duration-500 ease-in-out"
+                  id="arrow"
+               >
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 448 512"
+                     fill="currentColor"
+                  >
+                     <path
+                        d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                     />
+                  </svg>
+               </span>
+            </div>
+            <div
+               class="transition-height relative mx-auto h-0 w-[90%] overflow-hidden duration-300 ease-in-out"
+               id="formDiv"
+            >
+               <form
+                  class="duration-400 space-y-3 py-5 opacity-0 transition-opacity delay-200 ease-in"
+                  action=""
+                  id="form"
+               >
+                  <label class="mb-2" for="email"
+                     >E-mail:
+                     <input
+                        required
+                        class="mt-2 h-12 w-full rounded-2xl border border-bordoMediumDark bg-bordoLight pl-3 placeholder:text-bordoDark/30 focus:outline-none"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Seu e-mail"
+                  /></label>
+                  <label class="block" for="celular"
+                     >Celular:
+                     <input
+                        required
+                        class="mt-2 h-12 w-full rounded-2xl border border-bordoMediumDark bg-bordoLight pl-3 placeholder:text-bordoDark/30 focus:outline-none"
+                        type="tel"
+                        name="celular"
+                        id="celular"
+                        placeholder="Seu telefone celular"
+                  /></label>
+                  <label class="block" for="mensagem"
+                     >Mensagem:
+                     <textarea
+                        rows="4"
+                        id="mensagem"
+                        placeholder="Qual mensagem você deseja enviar?"
+                        class="mt-2 w-full rounded-2xl border border-bordoMediumDark bg-bordoLight p-3 placeholder:text-bordoDark/30 focus:outline-none"
+                     ></textarea>
+                  </label>
+                  <input
+                     type="submit"
+                     value="Enviar mensagem"
+                     class="h-12 w-full rounded-2xl bg-bordoDark/70 text-center text-bordoLight shadow"
+                  />
+               </form>
+            </div>
+         </div>
+         <div class="w-full space-y-3 text-left">
+            <a href="mailto:gisele_maia@msn.com" class="flex items-center">
+               <span class="mr-3 inline-block w-5"
+                  ><img src="./src/assets/mail.svg" alt="ícone de email" />
+               </span>
+               gisele_maia@msn.com
+            </a>
+            <a href="tel:+5524992816710" class="flex items-center">
+               <span class="mr-3 inline-block w-5"
+                  ><img src="./src/assets/tel.svg" alt="ícone de email" />
+               </span>
+               (24) 99281-6710
+            </a>
+            <p class="flex items-center">
+               <span class="mr-3 inline-block w-5 shrink-0"
+                  ><img src="./src/assets/time.svg" alt="ícone de email" />
+               </span>
+               Quinta e sexta-feira das 8:00 às 19:00
+            </p>
+            <a
+               href="https://goo.gl/maps/Dc6TGoNViXCzFJTX9"
+               class="flex items-center"
+            >
+               <span class="-ml-[2px] mr-3 inline-block w-6 shrink-0"
+                  ><img src="./src/assets/pin.svg" alt="ícone de email" />
+               </span>
+               Rua Lúcio de Mendonça, nº. 22, Prédio Barra Center, Centro, Barra
+               do Piraí, RJ
+            </a>
+         </div>
+      </main>
+   </body>
+</html>
